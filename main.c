@@ -102,7 +102,9 @@ void set_time(uint8_t hours, uint8_t minutes, uint8_t seconds){
 	  Error_Handler();
 	}
 }
-
+/*
+*Set Alarm time
+*/
 void set_alarm(uint8_t hours, uint8_t minutes, uint8_t seconds){
 	RTC_AlarmTypeDef sAlarm = {0};
 
@@ -305,10 +307,6 @@ void StaticVarInit(){
 	SettingTim.MinutesUnity = 0;
 	// variable responsible for first tube to set
 	NixieToSet = Nixie1;
-
-
-
-	//TIM3->CCR4 = 25;
 }
 /* USER CODE END PFP */
 
@@ -378,9 +376,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//27 sek  124 311
-//7 sek        124 312
-//  120	  	  	122  	  	314
+	
   while (1){
 
 	  if( flagUsart ){
