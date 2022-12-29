@@ -55,7 +55,7 @@ LightUpTube NixieToSet;
 
 volatile uint8_t timerFlag = 0;
 volatile uint8_t alarmFlag = 0;
-volatile uint8_t ADC_val = 0;		//ADC value to control luminance
+volatile uint16_t ADC_val = 0;		//ADC value to control luminance
 volatile uint8_t flagUsart = 0;
 
 volatile uint32_t currentTicksB0;
